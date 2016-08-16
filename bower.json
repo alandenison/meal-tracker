@@ -1,0 +1,20 @@
+{
+  "name": "mealtracker",
+  "description": "",
+  "main": "",
+  "license": "MIT",
+  "homepage": "https://github.com/alandenison/angular-skeleton-project",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "^3.3.7"
+  },
+  "authors": [
+    "Alan Denison <alan79td@gmail.com>"
+  ]
+}
