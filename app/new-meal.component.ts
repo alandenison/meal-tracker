@@ -20,6 +20,6 @@ export class NewMealComponent {
     this.onNewMeal.emit(new Meal(name.value, description.value, parseInt(calorie.value)));
     name.value = "";
     description.value = "";
-    calorie = 0;
+    calorie ;
   }
 }
