@@ -8,16 +8,21 @@
 ## Description
 This program will allow a user to enter meals they have eaten, including calorie count, and track them. You can also show only meals that were low calorie.
 ## Setup/Installation Requirements
+You will need the following things properly installed on your computer.
+
+* [Git](http://git-scm.com/)
+* [Node.js](http://nodejs.org/) (with NPM)
+* [Bower](http://bower.io/)
+
 From the command line, clone this repository by typing  
-git clone https://github.com/alandenison/github-viewer
+*git clone https://github.com/alandenison/github-viewer*
 Install bower and npm from the command line by entering:  
-npm install  
-bower install  
+*npm install*
+*bower install*
 
 Construct a server by typing into the command line:
-npm install gulp
-gulp build  
-gulp serve
+*gulp build*
+*gulp serve*
 
 ## Technologies Used
 
