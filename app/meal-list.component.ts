@@ -11,7 +11,8 @@ import { LowCaloriePipe } from './low-calorie.pipe';
   pipes: [LowCaloriePipe],
   directives: [MealComponent, NewMealComponent, EditMealComponent],
   template: `
-  <button (click)="lowCalorieShow()">Show low calorie meals</button>
+  <h2>showing {{displayLow}} foods</h2>
+  <button (click)="lowCalorieShow()">Toggle</button>
   <meal-display *ngFor="#currentMeal of mealList | lowCalorie:displayLow" [meal]="currentMeal" (click)="mealClicked(currentMeal)"
   [class.selected]="currentMeal === selectedMeal">
   </meal-display>
@@ -28,12 +29,15 @@ export class MealListComponent {
     this.mealList.push(meal);
   }
   lowCalorieShow() {
-    if(this.displayLow==="low") {
-      this.displayLow = "all";
+    if(this.displayLow==="all") {
+      this.displayLow = "high calorie";
+    } else if (this.displayLow==="high calorie"){
+      this.displayLow = "low calorie";
     } else {
-      this.displayLow = "low";
+      this.displayLow = "all";
     }
   }
+
   mealClicked(clickedMeal: Meal): void {
     this.selectedMeal = clickedMeal;
   }

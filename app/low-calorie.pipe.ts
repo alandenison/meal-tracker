@@ -7,9 +7,13 @@ import { Meal } from './meal.model';
 })
 export class LowCaloriePipe {
   transform(input: Meal[], args) {
-    if(args[0]==="low") {
+    if(args[0]==="low calorie") {
       return input.filter((meal) => {
         return meal.calorie < 500;
+      });
+    } else if(args[0]==="high calorie"){
+      return input.filter((meal) => {
+        return meal.calorie >= 500;
       });
     } else {
       return input;
