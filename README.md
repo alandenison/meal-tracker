@@ -17,12 +17,12 @@ You will need the following things properly installed on your computer.
 From the command line, clone this repository by typing  
 *git clone https://github.com/alandenison/github-viewer*
 Install bower and npm from the command line by entering:  
-*npm install*
-*bower install*
+* npm install
+* bower install
 
 Construct a server by typing into the command line:
-*gulp build*
-*gulp serve*
+* gulp build
+* gulp serve
 
 ## Technologies Used
 
